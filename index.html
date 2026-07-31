@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Sets the character encoding and responsive viewport for mobile devices -->
+    <!-- Metadata for character encoding and mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
-    <!-- Links our HTML file to our external CSS stylesheet -->
+    <title>Run 3 - Arcade Portal</title>
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main header section of the webpage -->
+    <!-- Header section for the game title and description -->
     <header>
-        <h1>Welcome to My Website!</h1>
-        <p>Built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+        <h1>🚀 Run 3 Arcade</h1>
+        <p>Navigate the endless space tunnels. Don't look down!</p>
     </header>
 
-    <!-- Main content container -->
+    <!-- Main container holding the game frame -->
     <main>
-        <section class="card">
-            <h2>Hello, World! 👋</h2>
-            <p>This is your starting template. Click the button below to see JavaScript in action!</p>
-            <!-- An interactive button that triggers a JavaScript function -->
-            <button id="colorBtn">Click Me!</button>
-        </section>
+        <div class="game-container">
+            <!-- Embedding an HTML5 version of Run 3 via iframe -->
+            <iframe id="gameFrame" src="https://player03.com/run/3/" title="Run 3 Game" allowfullscreen></iframe>
+        </div>
+        
+        <!-- Interactive controls container handled by JavaScript -->
+        <div class="control-panel">
+            <button id="fullscreenBtn">Go Fullscreen 📺</button>
+        </div>
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2026 Future Developer. All rights reserved.</p>
+        <p>Hosted with GitHub Pages | Enjoy the run!</p>
     </footer>
 
-    <!-- Links our HTML file to our external JavaScript script -->
+    <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
