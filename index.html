@@ -1,40 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata for character encoding and mobile responsiveness -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run 3 - Arcade Portal</title>
-    <!-- Link to the external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Ninja Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header section for the game title and description -->
-    <header>
-        <h1>🚀 Run 3 Arcade</h1>
-        <p>Navigate the endless space tunnels. Don't look down!</p>
-    </header>
-
-    <!-- Main container holding the game frame -->
-    <main>
-        <div class="game-container">
-            <!-- Embedding an HTML5 version of Run 3 via iframe -->
-            <iframe id="gameFrame" src="https://player03.com/run/3/" title="Run 3 Game" allowfullscreen></iframe>
-        </div>
-        
-        <!-- Interactive controls container handled by JavaScript -->
-        <div class="control-panel">
-            <button id="fullscreenBtn">Go Fullscreen 📺</button>
-        </div>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>Hosted with GitHub Pages | Enjoy the run!</p>
-    </footer>
-
-    <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
+  <div id="game-container">
+    <div id="ui-overlay">
+      <div id="score-board">Score: <span id="score">0</span></div>
+      <div id="lives-board">Lives: <span id="lives">❤️❤️❤️</span></div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+  <script src="game.js"></script>
 </body>
 </html>
